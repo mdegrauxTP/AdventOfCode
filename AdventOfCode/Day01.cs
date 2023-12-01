@@ -13,11 +13,10 @@ public class Day01 : BaseDay
 
     public override ValueTask<string> Solve_1()
     {
-        //string pattern = @"([0-9])";
-        //var matches = _input.Select(l => Regex.Matches(l, pattern));
-        //var result = matches.Select(m => int.Parse(m.First().ToString() + m.Last().ToString())).Sum();
-        //return new(result.ToString());
-        return new("");
+        string pattern = @"([0-9])";
+        var matches = _input.Select(l => Regex.Matches(l, pattern));
+        var result = matches.Select(m => int.Parse(m.First().ToString() + m.Last().ToString())).Sum();
+        return new(result.ToString());
     }
 
     public override ValueTask<string> Solve_2()
