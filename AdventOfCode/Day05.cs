@@ -12,13 +12,12 @@ public class Day05 : BaseDay
 {
     private readonly List<string> _input;
     private readonly List<long> seeds;
-    private readonly List<List<(long from, long to, long adjustment)>> maps;
+    private readonly List<List<(long from, long to, long adjustment)>> maps = new List<List<(long from, long to, long adjustment)>>();
 
     public Day05()
     {
         _input = File.ReadAllLines(InputFilePath).ToList();
-        seeds = _input[0].Split(' ').Skip(1).Select(x => long.Parse(x)).ToList();
-        maps = new List<List<(long from, long to, long adjustment)>>();
+        seeds = _input[0].Split(' ').Skip(1).Select(x => long.Parse(x)).ToList();        
         List<(long from, long to, long adjustment)>? currmap = null;
         foreach (var line in _input.Skip(2))
         {
@@ -66,7 +65,6 @@ public class Day05 : BaseDay
 
     public override ValueTask<string> Solve_2()
     {
-
         var ranges = new List<(long from, long to)>();
         for (int i = 0; i < seeds.Count; i += 2)
             ranges.Add((from: seeds[i], to: seeds[i] + seeds[i + 1] - 1));
