@@ -37,4 +37,21 @@ public static class StringExtension
            .Select(s => shouldTrim ? s.Trim() : s)
            .ToList();
     }
+
+    public static Dictionary<(int x, int y), char> ConvertToMap(this string input)
+    {
+        Dictionary<(int x, int y), char> patternDict = new Dictionary<(int x, int y), char>();
+
+        string[] rows = input.Split("\r\n");
+
+        for (int y = 0; y < rows.Length; y++)
+        {
+            for (int x = 0; x < rows[y].Length; x++)
+            {         
+                patternDict[(x, y)] = rows[y][x];
+            }
+        }
+
+        return patternDict;
+    }
 }
