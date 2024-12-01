@@ -1,6 +1,6 @@
 ﻿using MoreLinq;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day09 : BaseDay
 {

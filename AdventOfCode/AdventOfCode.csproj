@@ -1,10 +1,16 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="2023\**" />
+    <EmbeddedResource Remove="2023\**" />
+    <None Remove="2023\**" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AoCHelper" Version="3.0.0" />
@@ -17,7 +23,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="Inputs\*">
+    <None Update="Inputs\01.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>

@@ -1,7 +1,7 @@
 ﻿using MoreLinq;
 using System.Drawing;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day15 : BaseDay
 {

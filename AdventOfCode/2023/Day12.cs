@@ -2,9 +2,9 @@
 using System.Drawing;
 using System.Text;
 using System.Text.RegularExpressions;
-using static AdventOfCode.Day10;
+using static AdventOfCode2023.Day10;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day12 : BaseDay
 {

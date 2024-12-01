@@ -3,7 +3,7 @@ using MoreLinq;
 using System.Linq;
 using System.Text;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day13 : BaseDay
 {

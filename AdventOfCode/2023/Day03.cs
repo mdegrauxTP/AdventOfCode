@@ -5,7 +5,7 @@ using System.Drawing;
 using System.Collections.Generic;
 using System.Xml.Linq;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day03 : BaseDay
 {

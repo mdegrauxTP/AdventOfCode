@@ -1,7 +1,7 @@
 ﻿using Spectre.Console.Rendering;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day02 : BaseDay
 {

@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Text;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day07 : BaseDay
 {

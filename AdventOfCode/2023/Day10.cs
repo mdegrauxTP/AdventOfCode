@@ -2,7 +2,7 @@
 using System.Drawing;
 using System.Drawing.Drawing2D;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day10 : BaseDay
 {

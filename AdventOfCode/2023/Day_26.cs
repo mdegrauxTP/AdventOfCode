@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode2023;
 
 public class Day_26 : BaseDay
 {

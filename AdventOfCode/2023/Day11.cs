@@ -1,8 +1,8 @@
 ﻿using MoreLinq;
 using System.Drawing;
-using static AdventOfCode.Day10;
+using static AdventOfCode2023.Day10;
 
-namespace AdventOfCode;
+namespace AdventOfCode2023;
 
 public class Day11 : BaseDay
 {
