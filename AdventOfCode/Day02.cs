@@ -61,8 +61,6 @@ public class Day02 : BaseDay
                 };
             }
 
-           
-            if(isSafe) okOnes.Add(report);
             if (isSafe) reportSafe++;
         }
 
