@@ -7,13 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="2023\**" />
-    <EmbeddedResource Remove="2023\**" />
-    <None Remove="2023\**" />
+    <Compile Remove="_2023\**" />
+    <Compile Remove="_2024\**" />
+    <EmbeddedResource Remove="_2023\**" />
+    <EmbeddedResource Remove="_2024\**" />
+    <None Remove="_2023\**" />
+    <None Remove="_2024\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="AoCHelper" Version="3.0.0" />
     <PackageReference Include="morelinq" Version="4.1.0" />
     <PackageReference Include="System.Drawing.Common" Version="8.0.0" />
   </ItemGroup>
