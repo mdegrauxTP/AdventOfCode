@@ -5,7 +5,7 @@ using System.Text.RegularExpressions;
 
 namespace AdventOfCode._2025;
 
-public class Day02
+public partial class Day02
 {
    
     private readonly string _input;
@@ -92,18 +92,6 @@ public class Day02
 
 
         return new(total.ToString());
-    }
-
-    public static class BigIntegerExtensions
-    {
-        public static IEnumerable<BigInteger> Range(BigInteger start, BigInteger count)
-        {
-            if (count < 0)
-                throw new ArgumentOutOfRangeException(nameof(count));
-
-            for (BigInteger i = 0; i < count; i++)
-                yield return start + i;
-        }
     }
 
 
